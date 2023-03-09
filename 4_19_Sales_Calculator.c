@@ -17,6 +17,7 @@ int main()
     // We are going to make the loop iterate for a span of seven days , that is one week
     while (day < 8)
     {
+        int currentProductPrice = 0;
         printf("\nDAY %d\n", day);
         printf("%s", "Enter product number, quantity sold (-1 to quit) (99 to move to next day): \n");
         printf("Day %d \n", day);
@@ -31,32 +32,33 @@ int main()
             continue;
         }
 
-        // Using the switch cases to represent different prices, then multiply the price selected with the quantity sold then increment the sales variable accordingly
+       //get product price
         switch (productNumber)
         {
         case 1:
-            sales += (PRICE1 * quantitySold);
-            puts("Input received. Continue...");
+            currentProductPrice = PRICE1;
             break;
         case 2:
-            sales += (PRICE2 * quantitySold);
-            puts("Input received. Continue...");
+            currentProductPrice = PRICE2;
             break;
         case 3:
-            sales += (PRICE3 * quantitySold);
-            puts("Input received. Continue...");
+           currentProductPrice = PRICE3;
             break;
         case 4:
-            sales += (PRICE4 * quantitySold);
-            puts("Input received. Continue...");
+           currentProductPrice = PRICE4;
             break;
         case 5:
-            sales += (PRICE5 * quantitySold);
-            puts("Input received. Continue...");
+           currentProductPrice = PRICE5;
             break;
         default:
             printf("%s", "Enter a valid product number between 1 and 5!\n\n");
             break;
+        }
+
+        //Add these sales to the sales counter
+        if(currentProductPrice != 0){
+            sales+= currentProductPrice * quantitySold;
+            puts("Input received. Continue...");
         }
     }
     printf("\nThe total retail value of all sales is $%.3f", sales);
