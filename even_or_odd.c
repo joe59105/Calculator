@@ -7,9 +7,13 @@ bool is_odd(int number) ;
 
 
 
+
+
+
 int main(void)
 {
     int number = 12;
+
 
     if  (is_even(number))
      printf("number is even\n");
@@ -22,6 +26,10 @@ int main(void)
     
 }
 
+
+
+
+
 bool is_even(int number)
 {
     if (number % 2 == 0) return true;
@@ -33,3 +41,5 @@ bool is_odd(int number)
     if (number % 2 == 1 ) return true;
     else return false;
 }
+
+
