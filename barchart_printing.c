@@ -3,6 +3,7 @@
 int main() {
     int num;
 
+
     // Loop to read five numbers
     for (int i = 0; i < 5; i++) {
         // Prompt user to enter a number
