@@ -16,6 +16,7 @@ int main()
     scanf("%lf", &adjacent);
 
     printf("The hypotenuse of the triangle is %lf", hypotenuse(adjacent, opposite));
+    return 0;
 }
 
 double hypotenuse(double adjacent, double hypotenuse)
