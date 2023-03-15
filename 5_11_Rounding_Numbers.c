@@ -9,14 +9,18 @@ double roundToThousandths(double number);
 int main ()
 {
     double num;
-    printf("%s","Enter a number that you want to round:");
-    scanf("%lf",&num);
-
-    printf("The number you entered was %lf\n",num);
-    printf("Rounded to the nearest integer it is %d\n",roundToInteger(num));
-    printf("Rounded to the nearest Tenths it is %.1lf\n", roundToTenths(num));
-    printf("Rounded to the nearest Hundredths it is %.2lf\n", roundToHundredths(num));
-    printf("Rounded to the nearest Thousandths it is %.3lf\n", roundToThousandths(num)); 
+   while (1) {
+       printf("%s", "Enter a number that you want to round(Enter -1 to exit):");
+       scanf("%lf", &num);
+        if (num == -1) {
+            break;
+        }
+       printf("The number you entered was %lf\n", num);
+       printf("Rounded to the nearest integer it is %d\n", roundToInteger(num));
+       printf("Rounded to the nearest Tenths it is %.1lf\n", roundToTenths(num));
+       printf("Rounded to the nearest Hundredths it is %.2lf\n", roundToHundredths(num));
+       printf("Rounded to the nearest Thousandths it is %.3lf\n", roundToThousandths(num));
+   }
     return 0;
 }
 
