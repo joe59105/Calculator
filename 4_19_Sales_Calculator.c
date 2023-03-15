@@ -64,3 +64,8 @@ int main()
     printf("\nThe total retail value of all sales is $%.3f", sales);
     return 0;
 }
+
+
+
+
+
