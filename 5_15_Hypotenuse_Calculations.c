@@ -9,7 +9,7 @@ int main()
     double opposite;
 
     while (1) {
-        puts("enter the opposite side of the triangle(Enter -1 to exit)");
+        puts("Enter the opposite side of the triangle(Enter -1 to exit)");
         scanf("%lf", &opposite); 
         if (opposite == -1) {
             break;
@@ -20,9 +20,9 @@ int main()
         {
             break;
         }
-        printf("The hypotenuse of the triangle is %lf", hypotenuse(adjacent, opposite));
-        return 0;
+        printf("The hypotenuse of the triangle is %lf\n", hypotenuse(adjacent, opposite));
     }
+        return 0;
 }
 
 double hypotenuse(double adjacent, double hypotenuse)
