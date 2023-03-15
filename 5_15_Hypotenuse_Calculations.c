@@ -9,12 +9,12 @@ int main()
     double opposite;
 
     while (1) {
-        puts("enter the opposite side of the triangle");
+        puts("enter the opposite side of the triangle(Enter -1 to exit)");
         scanf("%lf", &opposite);
         if (opposite == -1) {
             break;
         }
-        puts("enter the adjacent side of the triangle");
+        puts("enter the adjacent side of the triangle(Enter -1 to exit)");
         scanf("%lf", &adjacent);
         if (adjacent == -1)
         {
