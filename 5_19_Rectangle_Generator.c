@@ -29,7 +29,8 @@ int getInput(char prompt[]){
 
 
 void generateRectangle(int side1, int side2){
-    char patternString[side1];
+    char patternString[side1+1];
+    patternString[side1] = '\0';
     //build the row
     for(int i = 0; i < side1; i++){
         patternString[i] = '*';
