@@ -25,7 +25,7 @@ int main()
         return 0;
 }
 
-double hypotenuse(double adjacent, double hypotenuse)
+double hypotenuse(double adjacent, double opposite)
 {
-    return sqrt((adjacent * adjacent) + (hypotenuse * hypotenuse));
+    return sqrt((adjacent * adjacent) + (opposite * opposite));
 }
