@@ -1,5 +1,6 @@
-#include <stdio.h>;
-#include <math.h>;
+#include <stdio.h>
+#include <math.h>
+
 int roundToInteger(double number);
 double roundToTenths(double number);
 double roundToHundredths(double number);
